@@ -1,0 +1,8 @@
+
+# Don't put build files into the git repository.
+
+# Linters
+/.eslintrc.json
+
+# Dependencies
+/node_modules
