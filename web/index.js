@@ -11,6 +11,5 @@ window.addEventListener('load', () => {
 
     // Create and initialize the editor panel,
     const editor_panel = EditorPanel(window, document);
-    editor_panel.init();
 
 });

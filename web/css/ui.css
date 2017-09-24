@@ -54,3 +54,99 @@ body {
   height: 100%;
   float: left;
 }
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.tree-view-base {
+    position: relative;
+}
+
+.tree-view-left-options {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 24px;
+/*    background: #ffd0d0; */
+}
+
+.tree-left-control-bar {
+    height: 20px;
+}
+
+.tree-view-left-options .layer-view-icon {
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    background-color: #000000;
+    -webkit-mask: url('../../node_modules/octicons/build/svg/eye.svg') no-repeat 50% 50%;
+    mask: url('../../node_modules/octicons/build/svg/eye.svg') no-repeat 50% 50%;
+}
+.tree-view-left-options .layer-view-icon-off {
+    background-color: #c8c8c8;
+}
+
+.tree-view-root {
+    position: absolute;
+    left: 24px;
+    top: 0px;
+    font-family: sans-serif;
+    font-size: 11pt;
+    right: 0px;
+}
+.tree-view-root .list-tree .list-open::before {
+    content:'';
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../../node_modules/octicons/build/svg/chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin-left: -15px;
+}
+.tree-view-root .list-tree .list-close::before {
+    content:'';
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../../node_modules/octicons/build/svg/chevron-right.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin-left: -15px;
+}
+.tree-view-root .node {
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+}
+.tree-view-root .list-tree {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+}
+.list-tree > li {
+    padding-left: 14px;
+}
+.list-tree .selected::before, ul.selected::before {
+    content: '';
+    background-color: #d0d0f0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
