@@ -7,7 +7,11 @@ body {
   background-color: #454545;
   overflow: hidden;
   color: #d2d2d2;
+
+  font-family: sans-serif;
+  font-size: 0.9em;
 }
+
 .uimain {
     min-width: 800px;
     min-height: 300px;
@@ -19,6 +23,14 @@ body {
     position: absolute;
     background-color:a0a0a0;
 }
+.uimain select {
+    border: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #676767;
+    color: #d2d2d2;
+}
+
 .split {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -63,6 +75,10 @@ body {
     position: relative;
     background-color: #fafafa;
 }
+#ui_left1_content, #ui_left2_content, #ui_timeline_content {
+    position: relative;
+}
+
 .editor_buttonbar {
     padding-top: 10px;
     position: absolute;
@@ -77,9 +93,88 @@ body {
     position: absolute;
     left: 40px;
     top: 0px;
-    bottom: 0px;
+    bottom: 35px;
     right: 0px;
 }
+.editor_actionbar {
+    position: absolute;
+    padding-left: 8px;
+    left: 40px;
+    bottom: 0px;
+    right: 0px;
+    height: 34px;
+    background-color: #676767;
+    border-top: 1px solid black;
+}
+.editor_actionbar select {
+    height: 34px;
+}
+
+.project-tree-content {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 70px;
+    bottom: 0px;
+}
+.project-tree-actions {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 57px;
+    padding: 6px 3px 6px 4px;
+    border-bottom: 1px solid #202020;
+}
+.project-tree-actions select {
+    width: 100%;
+}
+
+
+.slider-range {
+    position: absolute;
+    left: 0px;
+    right: 45px;
+    height: 30px;
+}
+.slider-range input {
+    width: 100%;
+    height: 100%;
+}
+.slider-input {
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 30px;
+}
+.slider-input input {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: transparent;
+    color: #d2d2d2;
+}
+.opacity-slider {
+    position: relative;
+}
+
+
+/*
+.opacity-range {
+    position: relative;
+}
+.opacity-range #project-layer-opacity-range {
+    position: absolute;
+    left: 4px;
+    right: 40px;
+}
+.opacity-range #project-layer-opacity-input {
+    position: absolute;
+    width: 35px;
+    right: 4px;
+}
+*/
+
 
 .editor-button {
     border: 1px solid #404040;
