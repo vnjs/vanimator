@@ -12,6 +12,10 @@ body {
   font-size: 0.9em;
 }
 
+[draggable=true] {
+/*	cursor: move; */
+}
+
 .uimain {
     min-width: 800px;
     min-height: 300px;
