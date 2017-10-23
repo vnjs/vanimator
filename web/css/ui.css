@@ -214,22 +214,6 @@ body {
 }
 
 
-/*
-.opacity-range {
-    position: relative;
-}
-.opacity-range #project-layer-opacity-range {
-    position: absolute;
-    left: 4px;
-    right: 40px;
-}
-.opacity-range #project-layer-opacity-input {
-    position: absolute;
-    width: 35px;
-    right: 4px;
-}
-*/
-
 
 .editor-button {
     border: 1px solid #404040;
@@ -345,6 +329,62 @@ li {
 .list-tree li.selected, ul.selected > div.node {
     color: #ffffff;
 }
+
+
+.actions-list-panel {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 11pt;
+}
+.actions-list-menu {
+    width: 100%;
+    height: 50px;
+/*    border-bottom: 1px solid black; */
+}
+.actions-list-item-1d {
+    width: 100%;
+    height: 50px;
+}
+.actions-list-item-2d {
+    width: 100%;
+    height: 85px;
+}
+.actions-list-item-name {
+    padding: 3px 5px 3px 8px;
+}
+
+.actions-list-controller-1d {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.controller-center-line {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 2px;
+    background: #2d2d2d;
+    pointer-events: none;
+}
+.controller-button-tray {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    margin-top: -7px;
+    pointer-events: none;
+}
+.controller-button {
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    border-radius: 50%;
+    background: #b0b0b0;
+    width: 12px;
+    height: 12px;
+    margin-left: -7px;
+/*    margin-top: -7px; */
+    pointer-events: none;
+}
+
 
 
 
