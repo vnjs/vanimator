@@ -28,7 +28,7 @@ body {
     background-color:a0a0a0;
 }
 .uimain select {
-    border: 0px;
+    border: 1px solid #414141;
     padding-left: 8px;
     padding-right: 8px;
     background-color: #676767;
@@ -107,6 +107,7 @@ body {
     font-size: 15px;
 }
 .modal_content .dialog-title {
+    padding-top: 9px;
     padding-bottom: 6px;
 }
 
