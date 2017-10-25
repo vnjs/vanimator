@@ -336,6 +336,7 @@ li {
     position: relative;
     font-family: sans-serif;
     font-size: 11pt;
+    cursor: default;
 }
 .actions-list-menu {
     width: 100%;
@@ -344,14 +345,17 @@ li {
 }
 .actions-list-item-1d {
     width: 100%;
-    height: 50px;
+    height: 54px;
+}
+.actions-list-selected {
+    background: #363637;
 }
 .actions-list-item-2d {
     width: 100%;
     height: 85px;
 }
 .actions-list-item-name {
-    padding: 3px 5px 3px 8px;
+    padding: 7px 5px 5px 8px;
 }
 
 .actions-list-controller-1d {
@@ -365,6 +369,9 @@ li {
     height: 2px;
     background: #2d2d2d;
     pointer-events: none;
+}
+.actions-list-selected .controller-center-line {
+    background: #202020;
 }
 .controller-button-tray {
     position: absolute;
@@ -385,6 +392,38 @@ li {
 /*    margin-top: -7px; */
     pointer-events: none;
 }
+
+.timeline-main {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+.timeline-controls {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 22px;
+    overflow: hidden;
+}
+.timeline-body {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 22px;
+    bottom: 0px;
+}
+.timeline-canvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+/*    width: 100%;
+    height: 100%; */
+}
+
 
 
 
