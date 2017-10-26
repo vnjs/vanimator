@@ -423,7 +423,10 @@ li {
 /*    width: 100%;
     height: 100%; */
 }
-
+.timeline-canvas:focus {
+    border: 0px;
+    outline: 0px;
+}
 
 
 
