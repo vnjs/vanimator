@@ -1,0 +1,65 @@
+Serialized State Schema;
+
+Arrays:
+
+  actions[]:
+    {
+      uid,
+      name,
+      type, (eg. '1d -1 1')
+      value,
+      anim_keys, [array of
+        {
+          uid (anim_keys.uid),
+          type (eg. 'mesh_morph'),
+          target_uid
+        }]
+    }
+
+  anim_keys[]:
+    {
+      uid,
+      keyframe_data, [array of
+        {
+          time,
+          morph_target_uid
+        }]
+    }
+
+  deformers[]:
+
+  meshes[]:
+    {
+      uid,
+      name,
+      layers_set, [array of texture layer uids]
+      me_vertices, [array of { uid, rx, ry, dx, dy }]
+      me_face_indexes,
+      me_selected_indexes,
+      me_edge_indexes,
+    }
+
+  morph_targets[]:
+    {
+      uid,
+      target_mesh_uid,
+      target_verts, [array of { uid, dx, dy }]
+    }
+
+  texture_layers[]:
+    {
+      uid,
+      type,
+      name,
+      x,
+      y,
+      width,
+      height,
+      opacity,
+      blend,
+      path,
+      mesh_uid_for_layer,
+      raw_texture_power,
+      raw_texture_type,
+      $raw_texture_pixels,
+    }
