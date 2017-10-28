@@ -407,13 +407,14 @@ li {
     right: 0px;
     top: 0px;
     height: 22px;
+    padding: 2px 20px 2px 170px;
     overflow: hidden;
 }
 .timeline-body {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 22px;
+    top: 26px;
     bottom: 0px;
 }
 .timeline-canvas {
@@ -428,10 +429,52 @@ li {
     outline: 0px;
 }
 
+.timeline-insert-keyframe-icon {
+    margin-top: -1px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #b0b0b0;
+    -webkit-mask: url('../../node_modules/octicons/build/svg/diff-added.svg') no-repeat 50% 50%;
+    mask: url('../../node_modules/octicons/build/svg/diff-added.svg') no-repeat 50% 50%;
+}
+.timeline-remove-keyframe-icon {
+    margin-top: -1px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #b0b0b0;
+    -webkit-mask: url('../../node_modules/octicons/build/svg/diff-removed.svg') no-repeat 50% 50%;
+    mask: url('../../node_modules/octicons/build/svg/diff-removed.svg') no-repeat 50% 50%;
+}
+.timeline-button {
+    padding: 0px 10px 0px 8px;
+    line-height: 22px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #415181;
+    color: #b0b0b0;
+    cursor: default;
+    border: 0px;
+    margin-left: 6px;
+}
+.timeline-button:hover {
+    background: #41588f;
+}
+.timeline-button:disabled {
+    background: #4b4b4b;
+}
+
+
+
 
 
 
 .noselect {
+  cursor: default;
   -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
