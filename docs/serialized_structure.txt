@@ -57,6 +57,7 @@ Arrays:
       height,
       opacity,
       blend,
+      visible,
       path,
       mesh_uid_for_layer,
       raw_texture_power,
