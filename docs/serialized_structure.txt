@@ -59,8 +59,10 @@ Arrays:
       blend,
       visible,
       path,
-      mesh_uid_for_layer,
-      raw_texture_power,
+      extra_details,   {
+                          mesh_uid_for_layer,
+                          raw_texture_power
+                       }
       raw_texture_type,
       $raw_texture_pixels,
     }
