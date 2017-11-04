@@ -217,13 +217,17 @@ body {
 
 
 .editor-button {
-    border: 1px solid #404040;
+    border: 1px solid #505050;
     padding-bottom: 4px;
-
 }
 .editor-button:hover {
-    background: #505050;
-    border: 1px solid #404040;
+    background: #606060;
+    border: 1px solid #505050;
+}
+.editor-button-selected {
+    border: 1px solid #101010;
+    background: #383838;
+    padding-bottom: 4px;
 }
 
 .editor-pencil-icon {
@@ -233,6 +237,14 @@ body {
     background-color: #ffffff;
     -webkit-mask: url('../../node_modules/octicons/build/svg/pencil.svg') no-repeat 50% 50%/60% 60%;
     mask: url('../../node_modules/octicons/build/svg/pencil.svg') no-repeat 50% 50%/60% 60%;
+}
+.editor-curves-icon {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-color: #ffffff;
+    -webkit-mask: url('../../node_modules/octicons/build/svg/git-merge.svg') no-repeat 50% 50%/60% 60%;
+    mask: url('../../node_modules/octicons/build/svg/git-merge.svg') no-repeat 50% 50%/60% 60%;
 }
 .editor-tools-icon {
     width: 37px;
