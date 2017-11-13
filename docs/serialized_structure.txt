@@ -43,7 +43,7 @@ Arrays:
     {
       uid,
       target_mesh_uid,
-      target_verts, [array of { uid, dx, dy }]
+      target_verts, [map of uid -> { uid, dx, dy }]
     }
 
   texture_layers[]:
