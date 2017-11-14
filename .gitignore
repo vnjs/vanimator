@@ -6,3 +6,6 @@
 
 # Dependencies
 /node_modules
+
+# Build directories
+/example/build/*
