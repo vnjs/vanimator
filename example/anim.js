@@ -119,7 +119,7 @@ function RenderLoop(viewer) {
     function renderCall(time) {
         requestAnimationFrame(renderCall);
 
-        if (time - last_render_time < 10) {
+        if (time - last_render_time < 5) {
             return;
         }
 
