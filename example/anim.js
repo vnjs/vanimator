@@ -143,6 +143,9 @@ function RenderLoop(viewer) {
                 }
             }
 
+            // Refresh the pose from the actions we set,
+            sample_model_target.refreshPoseFromActions();
+
             // const limit = 4000;
             // const f = (time % limit);
             // let o;
