@@ -1,5 +1,16 @@
 Serialized State Schema;
 
+Vars:
+
+  editor_scratch:
+    {
+      current_view_mode,
+      current_tool_mode
+    }
+
+
+
+
 Arrays:
 
   actions[]:
