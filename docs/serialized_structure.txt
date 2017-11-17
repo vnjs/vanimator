@@ -43,11 +43,12 @@ Arrays:
     {
       uid,
       name,
-      layers_set, [array of texture layer uids]
-      me_vertices, [array of { uid, rx, ry, dx, dy }]
+      layers_set,           [array of texture layer uids]
+      me_vertices,          [array of { uid, rx, ry, dx, dy }]
       me_face_indexes,
       me_selected_indexes,
       me_edge_indexes,
+      curve_details,        (object { points[], selected_uids[] })
     }
 
   morph_targets[]:
@@ -77,3 +78,19 @@ Arrays:
       raw_texture_type,
       $raw_texture_pixels,
     }
+
+
+
+
+To Do:
+
+* Generation of curved line lattice mesh.
+* Don't consume key presses in editor if dialog is open.
+* Curve editing.
+* Undo/Redo needs to happen correctly during timeline editing.
+* Timeline remove key frames.
+* Animation of Mesh Group transforms.
+
+
+
+Bugs:
