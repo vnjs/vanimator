@@ -84,13 +84,13 @@ Arrays:
 
 To Do:
 
-* Generation of curved line lattice mesh.
-* Don't consume key presses in editor if dialog is open.
+Done * Generation of curved line lattice mesh.
+Done * Don't consume key presses in editor if dialog is open.
 * Curve editing.
 * Undo/Redo needs to happen correctly during timeline editing.
 * Timeline remove key frames.
 * Animation of Mesh Group transforms.
-
+* Moving timeline causes undo.
 
 
 Bugs:
