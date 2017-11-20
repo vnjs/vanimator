@@ -111,6 +111,8 @@ function interpolateAction(action_name, last_time, time, last_value, new_value) 
 
 
 
+const UPDATE_FPS = 80;
+
 function RenderLoop(viewer) {
 
     let last_render_time = 0;
@@ -119,7 +121,7 @@ function RenderLoop(viewer) {
     function renderCall(time) {
         requestAnimationFrame(renderCall);
 
-        if (time - last_render_time < 5) {
+        if (time - last_render_time < (1000 / UPDATE_FPS)) {
             return;
         }
 
